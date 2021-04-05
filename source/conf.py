@@ -29,9 +29,15 @@ release = '0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+
 extensions = [
-    "sphinx_rtd_theme",
-    'myst_parser',
+    'sphinx_markdown_tables',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.todo',
+    'sphinxcontrib.images',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.autodoc',
+    'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -71,3 +77,10 @@ html_static_path = ['_static']
 html_css_files = ["custom.css"]
 
 html_logo = '_static/logo_qfield_colombia_100x100.png'
+
+images_config = {
+    'override_image_directive': True,
+    'default_image_width': '100%',
+    'show_caption': True,
+    'download': True
+    }
