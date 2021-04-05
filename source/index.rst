@@ -8,3 +8,4 @@ Documentación del uso de QField
    configuracion_inicial.md
    interfaz.md
    recoleccion_datos.md
+   imagenes_raster.md
