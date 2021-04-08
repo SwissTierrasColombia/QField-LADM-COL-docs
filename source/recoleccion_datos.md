@@ -16,34 +16,70 @@ Además es importante resaltar, que cada una de estas clases facilita el levanta
 
 ### Lindero 
 
+Representación de la captura en campo de un punto lindero
+
 <a class="" data-lightbox="Punto lindero" href="_static/recoleccion_datos/punto_lindero.gif" title="Punto lindero" data-title="Punto lindero"><img src="_static/recoleccion_datos/punto_lindero.gif" class="align-center" width="800px" height="500px" alt="Punto lindero">
 </a>
 ### Control 
+
+Representación de la captura en campo de un punto control
 
 <a class="" data-lightbox="Punto control" href="_static/recoleccion_datos/punto_control.gif" title="Punto control" data-title="Punto control"><img src="_static/recoleccion_datos/punto_control.gif" class="align-center" width="800px" height="500px" alt="Punto control">
 </a>
 ### Levantamiento
 
+Representación de la captura en campo de un punto levantamiento
+
 <a class="" data-lightbox="Punto levantamiento" href="_static/recoleccion_datos/punto_levantamiento.gif" title="Punto levantamiento" data-title="Punto levantamiento"><img src="_static/recoleccion_datos/punto_levantamiento.gif" class="align-center" width="800px" height="500px" alt="Punto levantamiento">
 </a>
 ## Formulario de predio
 
+El formulario de predio cuenta con una configuración basada en secciones para facilitar la captura de los diferentes componentes tanto alfanuméricos como geográficos. 
 
+Este formulario se encuentra dividido en 8 secciones que se describirán a continuación.
 
-### Información básica
+### 1 - Información básica
 
-### Información del predio
+Esta sección facilita la identificación de variables y características generales del predio como su localización e información del suelo, además es posible desde esta sección generar información geográfica asociada al predio, como lo son las direcciones del predio. 
 
-### Terreno
+### 2 - Información del predio
 
-### Derechos
+La sección de información del predio es una de las más largas del formulario y contempla el diligenciamiento de información alfanumérica relacionada a datos catastrales, datos registrales y la condición del predio. Dependiendo de cómo se diligencie este formulario, se habilitarán diferentes opciones relacionadas a los campos definidos anteriormente.
 
-### Restricciones del predio  
+### 3 - Terreno
 
-### Construcciones
+La tercera sección corresponde al formulario de terreno, esta tiene un componente geográfico, en donde se adquiere la geometría del terreno asociado al predio y se almacena la información asociada a ese terreno.
 
-### Ofertas de mercado inmobiliario
+### 4 - Derechos
 
-### Resultado de la vista 
+La cuarta sección corresponde a los derechos, en esta es posible adicionar uno o varios interesados o restricciones asociados al predio.
 
-### Observaciones
+#### Interesados
+
+Dentro del formulario de interesado, es posible agregar un nuevo interesado con su respectivo formulario o seleccionar uno ya existente dentro de la base de datos, también se agrega información asociada al derecho y una o varias fuentes.
+
+##### Fuentes
+
+Las fuentes permiten adicionar un adjunto a partir de la toma de una fotografía y el diligenciamiento de los diferentes atributos al interior del formulario. 
+#### Restricciones del predio
+
+El formulario de restricciones es bastante sencillo, ya que en este se agrega el tipo de servidumbre asociada al predio. 
+
+### 5 - Construcciones
+
+Esta sección facilita la creación de una o varias construcciones, el formulario está compuesto por dos pestañas, la primera que es información alfanumérica asociada a la construcción y la segunda permite la creación de una o varias unidades de construcción geográficas.
+#### Unidades de construcción
+
+El formulario de las unidades de construcción varía según las características que se seleccionen a lo largo del formulario, en este es posible agregar diferentes tipos de calificaciones de construcción, no convencionales y convencionales, siendo estas últimas las que tienen un formulario aparte para asociarlo a cada unidad de construcción.
+
+### 6 - Ofertas de mercado inmobiliario
+
+La sección de ofertas de mercado inmobiliario facilita agregar una o varias ofertas inmobiliarias asociadas al mismo predio, dentro de este formulario se solicitan la información del tipo de oferta, el valor pedido, el valor negociado, la fecha de captura de la oferta, el tiempo de la oferta en meses, el nombre del oferente y el teléfono de contacto del oferente, variables obligatorias para la captura de este formulario.
+
+### 7 - Resultado de la visita 
+
+En la sección de resultado visita, como su nombre lo indica, se recopila la información relacionada a la persona que atendió la visita y su relación con el predio.
+
+### 8 - Observaciones
+
+Esta es la última sección de la documentación y tiene por objetivo permitirle al reconocedor agregar las observaciones o novedades obtenidas en campo.
