@@ -3,6 +3,9 @@
 
 La interfaz inicial de QField contiene dos elementos principales: *Abrir archivo local* y el listado de *Proyectos Recientes*.
 
+<a class="" data-lightbox="Abrir proyecto" href="_static/interfaz/Abrir_proyecto.png" title="Abrir proyecto" data-title="Abrir proyecto"><img src="_static/interfaz/Abrir_proyecto.png" class="align-center" width="800px" height="500px" alt="Abrir proyecto">
+</a>
+
 ### Abrir archivo local
 
 Mediante este botón es posible acceder a los directorios de almacenamiento del dispositivo móvil, de manera que sea posible seleccionar el proyecto de QGIS a trabajar o el conjunto de datos que se quiere desplegar en QField.
@@ -16,11 +19,14 @@ Consiste en un acceso rápido de los últimos proyectos de QGIS (.qgs ó .qgz)  
 
 El área de trabajo de la aplicación QField se compone básicamente de seis (6) elementos: 
 
-### Lienzo
+<a class="" data-lightbox="Area de trabajo" href="_static/interfaz/Area_trabajo.png" title="Area de trabajo" data-title="Area de trabajo"><img src="_static/interfaz/Area_trabajo.png" class="align-center" width="800px" height="500px" alt="Area de trabajo">
+</a>
+
+### 1. Lienzo
 
 Hace referencia al espacio donde es posible visualizar e interactuar por medio de las herramientas de navegación con la información cargada por el usuario (mapas base, capas geográficas, imágenes, entre otros).
 
-### Botón de ubicación o posicionamiento
+### 2. Botón de ubicación o posicionamiento ![Barra de búsqueda](_static/interfaz/2_ubicacion.png)
 
 Corresponde a un botón que se encuentra en la esquina inferior derecha del lienzo, mediante el cual es posible habilitar o deshabilitar el acceso a la <u>Localización/Ubicación</u> del dispositivo móvil a la aplicación.
 
@@ -44,53 +50,60 @@ Al presionar este botón por al menos tres (3) segundos se despliega un menú qu
   <p>Estos datos están en función de la precisión del dispositivo del cual se extrae la información de posicionamiento.</p>
   </div>
 
-  - Opción para acceder a la "Configuración de posicionamiento". Como su nombre lo dice, permite acceder a la configuración de QField en lo correspondiente con los ajustes de localización <span style="background:green"><span style="color:white">ver pestaña configuración</span> </span>.
+  - Opción para acceder a la "Configuración de posicionamiento". Como su nombre lo dice, permite acceder a la configuración de QField en lo correspondiente con los ajustes de localización <span style="background:blue"><span style="color:white">ver pestaña configuración</span> </span>.
   - Opción para "Centrar en la posición actual", como herramienta de navegación permite que el lienzo se centre en la ubicación que provee el dispositivo.
 
-### Zoom in <span style="background:yellow"><span style="color:red">incluir icono +</span> </span>
+### 3. Zoom out ![Barra de búsqueda](_static/interfaz/3_zoom_out.png)
 
-### Zoom out <span style="background:yellow"><span style="color:red">incluir icono +</span> </span>
+Herramienta de navegación que permite que el usuario modifique la escala de visualización del lienzo reduciendo el detalle de información cargada en el proyecto.
 
-### Barra de búsqueda 
+### 4. Zoom in ![Barra de búsqueda](_static/interfaz/4_zoom_in.png)
 
-Corresponde al botón <span style="background:yellow"><span style="color:red">incluir icono lupa</span> </span>, con esta herramienta es posible realizar la búsqueda de registros y atributos sobre la información cargada por el usuario. Para hacer uso de esta función, se requiere previa definición de los campos y capas geográficas sobre las cuales se habilitará esta acción.
+Herramienta de navegación con la cual es posible que el usuario modifique la escala de visualización del lienzo ampliando el detalle de información que se despliega en la aplicación.  
 
-### Menú
+### 5. Barra de búsqueda ![Barra de búsqueda](_static/interfaz/5_busqueda.png)
 
-Botón <span style="background:yellow"><span style="color:red">incluir icono </span> </span> ubicado en la esquina superior izquierda del área de trabajo de la aplicación, mediante el cual se despliega una ventana con las siguientes opciones:
+Con esta herramienta es posible realizar la búsqueda de registros y atributos sobre la información cargada por el usuario. Para hacer uso de esta función, se requiere previa definición de los campos y capas geográficas sobre las cuales se habilitará esta acción.
 
-- Botón <span style="background:yellow"><span style="color:red">incluir icono </span> </span> (Regresar)
+### 6. Menú ![Barra de búsqueda](_static/interfaz/6_menu.png)
 
-  Se trata de la opción para cerrar la ventana que se despliega al hacer click en el botón de menú. 
+Botón ubicado en la esquina superior izquierda del área de trabajo de la aplicación, mediante el cual se despliega una ventana con las siguientes opciones:
 
-- Botón <span style="background:yellow"><span style="color:red">incluir icono </span> </span> (Configuración)
+<a class="" data-lightbox="Menu" href="_static/interfaz/menu.png" title="Menú" data-title="Menú"><img src="_static/interfaz/menu.png" class="align-center" alt="Menú">
+</a>
 
-  Al hacer click en este botón, se despliega un menú con las opciones:
+1. Botón incluir icono </span> </span> (Regresar)
 
-  	- Herramientas de medida
-  	- Imprimir a PDF
-  	- Abrir proyecto
-  	- Configuración
-  	- Message Log
-  	- Acerca de QField
+   Se trata de la opción para cerrar la ventana que se despliega al hacer click en el botón de menú. 
 
-- Botón <span style="background:yellow"><span style="color:red">incluir icono</span> </span> (Modos de trabajo)
+2. Botón (Configuración)
 
-  Corresponde al botón con el que el usuario selecciona el modo de trabajo a emplear, estos son: <span style="background:blue"><span style="color:white">Modo digitalización</span> </span> y <span style="background:blue"><span style="color:white">Modo exploración</span> </span>. 
+   Al hacer click en este botón, se despliega un menú con las opciones:
 
-- Tema de mapa
+   - Herramientas de medida
+   - Imprimir a PDF
+   - Abrir proyecto
+   - Configuración
+   - Message Log
+   - Acerca de QField
 
-  Desplegable que permite elegir entre los mapas base que el usuario haya definido previamente.
+3. Botón (Modos de trabajo)
 
-- Contenido del proyecto
+   Corresponde al botón con el que el usuario selecciona el modo de trabajo a emplear, estos son: <span style="background:blue"><span style="color:white">Modo digitalización</span> </span> y <span style="background:blue"><span style="color:white">Modo exploración</span> </span>. 
 
-  Permite visualizar en un listado la información cargada por el usuario al proyecto:
+4. Tema de mapa
 
-  - Elementos individuales
-    - Tablas
-    - Capas geográficas
-    - Imágenes ráster
-  - Grupos
+   Desplegable que permite elegir entre los mapas base que el usuario haya definido previamente.
+
+5. Contenido del proyecto
+
+   Permite visualizar en un listado la información cargada por el usuario al proyecto:
+
+   - Elementos individuales
+     - Tablas
+     - Capas geográficas
+     - Imágenes ráster
+   - Grupos
 
 ## Configuración
 
