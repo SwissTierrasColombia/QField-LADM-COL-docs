@@ -107,8 +107,21 @@ Botón ubicado en la esquina superior izquierda del área de trabajo de la aplic
 
 ## Configuración
 
-## Modo visualización
+<a class="" data-lightbox="Configuracion" href="_static/interfaz/Configuracion.gif" title="Configuracion" data-title="Configuracion"><img src="_static/interfaz/Configuracion.gif" class="align-center" width="800px" height="500px" alt="Configuracion">
+</a>
 
-## Modo edición
+Esta opción permite acceder a los ajustes de:
+
+- **General**: Corresponde a la configuración de acciones tales como: visualizar de la barra de escala, maximizar el formulario de atributos, navegar a escala fija, usar cámara nativa, activar modo de edición rápida, entre otras.
+- **Posicionamiento**: En esta opción es posible configurar el dispositivo del cual se obtiene la información de ubicación, de manera que si se emplea un dispositivo externo, tal como una antena GNSS se puedan incluir variables como la altura de ésta para realizar la compensación correspondiente en la variable Z (altura). Así mismo, en este menú es posible habilitar indicadores asociados al posicionamiento en el área de trabajo.
+- **Variables**: En este menú se encuentran definidas algunas variables del sistema, así mismo, allí se pueden añadir variables que el usuario haya definido para emplear en su proyecto.
+
+## Modo visualización ![Modo visualización](_static/interfaz/modo_visualizacion.png)
+
+En este modo es posible explorar la información cargada en el área de trabajo, sin que se modifique ningún tipo de atributo de la misma.
+
+## Modo edición ![Modo edición](_static/interfaz/modo_edicion.png)
+
+Esta opción permite que el usuario pueda crear, modificar o eliminar características -alfanuméricas y/o geográficas- de atributos asociados a la información (tablas y/o capas geográficas) cargada al proyecto.
 
 ## Opciones de capas geográficas

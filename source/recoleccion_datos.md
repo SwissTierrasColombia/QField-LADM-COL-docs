@@ -104,3 +104,20 @@ Esta es la última sección de la documentación y tiene por objetivo permitirle
 
 <a class="" data-lightbox="Observaciones" href="_static/recoleccion_datos/Observaciones.png" title="Observaciones" data-title="Observaciones"><img src="_static/recoleccion_datos/Observaciones.png" class="align-center" width="800px" height="500px" alt="Observaciones">
 </a>
+
+## Edición de capas geográficas
+
+La edición de capas geográficas se realiza mediante la selección del objeto geográfico en la interfaz o la búsqueda de este a partir de la barra de búsqueda, una vez que seleccionamos el objeto se nos activan dos opciones, una que corresponde a la edición del formulario en la parte alfanumérica y otra que corresponde a la edición de la parte geográfica  
+
+### Edición geográfica 
+
+Esta opción nos habilita el modo de edición de la geometría, destacando los vértices de esta y habilitando las siguientes opciones: 
+
+* Herramienta de vértices: 
+* Herramienta de división: 
+* Herramienta de remodelado: 
+* Herramienta de relleno de anillo:  
+
+### Edición alfanumérica 
+
+En este tipo de edición se accede a los atributos del formulario y es posible modificarlo, siempre y cuando en la configuración del proyecto, se habilite la opción de edición de cada una de las variables.

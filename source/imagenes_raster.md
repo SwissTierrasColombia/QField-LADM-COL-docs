@@ -1,5 +1,8 @@
 # Recomendaciones para el uso de imágenes ráster
 
+<a class="" data-lightbox="Imagenes raster" href="_static/imagenes_raster/Imagen_raster.gif" title="Imágenes raster" data-title="Imágenes raster"><img src="_static/imagenes_raster/Imagen_raster.gif" class="align-center" width="800px" height="500px" alt="Imágenes raster">
+</a>
+
 1. La información Raster en QField es unicamente de visualización y no de procesamiento.
 2. Se recomienda utilizar 3 bandas para la imagen ráster, máximo cuatro (4) en caso de incluir una banda alfa o de transparencia.
 3. No se cuenta con un tamaño máximo de pixel, pero es necesario tener presente que este tamaño tiene un gran impacto en el tamaño de la imagen y la velocidad con la que la imagen carga en el dispositivo móvil.
