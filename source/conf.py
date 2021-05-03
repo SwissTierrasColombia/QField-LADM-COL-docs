@@ -16,7 +16,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'qfield-docs'
+project = 'QField LADM-COL docs'
 copyright = '2021, SwissTierras Colombia'
 author = 'SwissTierras Colombia'
 
