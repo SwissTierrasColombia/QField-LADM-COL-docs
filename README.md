@@ -8,4 +8,4 @@ Para realizar cambios es necesario descargar el repositorio y realizar los sigui
 - Ejecutar `make html` en la carpeta del proyecto QField-docs 
 - Abrir el archivo index.html que se encontrará en Build/html/index.html` 
 
-De esta manera se verán reflejados los cambios que se realizarón 
+De esta manera se verán reflejados los cambios que se realizarón.
