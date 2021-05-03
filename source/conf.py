@@ -21,7 +21,7 @@ copyright = '2021, SwissTierras Colombia'
 author = 'SwissTierras Colombia'
 
 # The full version, including alpha/beta/rc tags
-release = '0'
+release = 'v0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -40,6 +40,11 @@ extensions = [
     'recommonmark'
 ]
 
+source_suffix = ['.rst', '.md']
+
+
+# The master toctree document.
+master_doc = 'index'
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -53,7 +58,7 @@ language = 'es'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -78,9 +83,17 @@ html_css_files = ["custom.css"]
 
 html_logo = '_static/logo_qfield_colombia_100x100.png'
 
+# -- Extension configuration -------------------------------------------------
+import sys,os
+sys.path.insert(0, os.path.abspath(".."))
+
 images_config = {
     'override_image_directive': True,
     'default_image_width': '100%',
     'show_caption': True,
     'download': True
     }
+
+gettext_compact = False
+gettext_enables = ['index']
+gettext_ignore_index = False
