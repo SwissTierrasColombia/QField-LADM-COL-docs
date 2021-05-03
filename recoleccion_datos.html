@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Recolección de datos &mdash; documentación de QField LADM-COL docs - v0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+        <script src="_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
+        <script src="_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
+        <script src="_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Recomendaciones para el uso de imágenes ráster" href="imagenes_raster.html" />
+    <link rel="prev" title="Interfaz" href="interfaz.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> QField LADM-COL docs
+          
+
+          
+            
+            <img src="_static/logo_qfield_colombia_100x100.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="configuracion_inicial.html">Configuración inicial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interfaz.html">Interfaz</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recolección de datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#flujo-de-captura-para-predios-nuevos-formacion">Flujo de captura para predios nuevos (Formación)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flujo-de-captura-para-predios-existentes-actualizacion">Flujo de captura para predios existentes (Actualización)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formulario-de-puntos">Formulario de puntos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lindero">Lindero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#control">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#levantamiento">Levantamiento</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#formulario-de-predio">Formulario de predio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#informacion-basica">1 - Información básica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#informacion-del-predio">2 - Información del predio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#terreno">3 - Terreno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#derechos">4 - Derechos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#interesados">Interesados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#restricciones-del-predio">Restricciones del predio</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#construcciones">5 - Construcciones</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#unidades-de-construccion">Unidades de construcción</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ofertas-de-mercado-inmobiliario">6 - Ofertas de mercado inmobiliario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resultado-de-la-visita">7 - Resultado de la visita</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#observaciones">8 - Observaciones</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#edicion-de-capas-geograficas">Edición de capas geográficas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#edicion-geografica">Edición geográfica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edicion-alfanumerica">Edición alfanumérica</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="imagenes_raster.html">Recomendaciones para el uso de imágenes ráster</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">QField LADM-COL docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Recolección de datos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/recoleccion_datos.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recoleccion-de-datos">
+<h1>Recolección de datos<a class="headerlink" href="#recoleccion-de-datos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="flujo-de-captura-para-predios-nuevos-formacion">
+<h2>Flujo de captura para predios nuevos (Formación)<a class="headerlink" href="#flujo-de-captura-para-predios-nuevos-formacion" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="flujo-de-captura-para-predios-existentes-actualizacion">
+<h2>Flujo de captura para predios existentes (Actualización)<a class="headerlink" href="#flujo-de-captura-para-predios-existentes-actualizacion" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="formulario-de-puntos">
+<h2>Formulario de puntos<a class="headerlink" href="#formulario-de-puntos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los formularios de puntos se encuentran divididos en tres (3) clases, estas son: Lindero, Control y Levantamiento. Al interior de los formularios encontraremos que los siguientes atributos se encuentras en las tres (3) clases de puntos:</p>
+<ul class="simple">
+<li><p>Posición interpolación</p></li>
+<li><p>Punto tipo</p></li>
+<li><p>Método de producción</p></li>
+</ul>
+<p>Además es importante resaltar, que cada una de estas clases facilita el levantamiento en campo de un tipo de información específica, el punto lindero es utilizado, como su nombre lo indica, para el levantamiento de la información de los linderos asociados al predio que se va a registrar, por otro lado los puntos de control, facilitan el levantamiento de puntos materializados o con un nivel de precisión de mayor calidad en el momento de captura de los linderos asociados al predio, por último se encuentran los puntos de levantamiento que facilitan la recolección de las unidades de construcción en el momento de captura.</p>
+<div class="section" id="lindero">
+<h3>Lindero<a class="headerlink" href="#lindero" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Representación de la captura en campo de un punto lindero</p>
+<p><a class="" data-lightbox="Punto lindero" href="_static/recoleccion_datos/punto_lindero.gif" title="Punto lindero" data-title="Punto lindero"><img src="_static/recoleccion_datos/punto_lindero.gif" class="align-center" width="800px" height="500px" alt="Punto lindero">
+</a></p>
+</div>
+<div class="section" id="control">
+<h3>Control<a class="headerlink" href="#control" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Representación de la captura en campo de un punto control</p>
+<p><a class="" data-lightbox="Punto control" href="_static/recoleccion_datos/punto_control.gif" title="Punto control" data-title="Punto control"><img src="_static/recoleccion_datos/punto_control.gif" class="align-center" width="800px" height="500px" alt="Punto control">
+</a></p>
+</div>
+<div class="section" id="levantamiento">
+<h3>Levantamiento<a class="headerlink" href="#levantamiento" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Representación de la captura en campo de un punto levantamiento</p>
+<p><a class="" data-lightbox="Punto levantamiento" href="_static/recoleccion_datos/punto_levantamiento.gif" title="Punto levantamiento" data-title="Punto levantamiento"><img src="_static/recoleccion_datos/punto_levantamiento.gif" class="align-center" width="800px" height="500px" alt="Punto levantamiento">
+</a></p>
+</div>
+</div>
+<div class="section" id="formulario-de-predio">
+<h2>Formulario de predio<a class="headerlink" href="#formulario-de-predio" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El formulario de predio cuenta con una configuración basada en secciones para facilitar la captura de los diferentes componentes tanto alfanuméricos como geográficos.</p>
+<p>Este formulario se encuentra dividido en 8 secciones que se describirán a continuación.</p>
+<div class="section" id="informacion-basica">
+<h3>1 - Información básica<a class="headerlink" href="#informacion-basica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta sección facilita la identificación de variables y características generales del predio como su localización e información del suelo, además es posible desde esta sección generar información geográfica asociada al predio, como lo son las direcciones del predio.</p>
+<p><a class="" data-lightbox="Información Básica" href="_static/recoleccion_datos/Informacion_basica.png" title="Información Básica" data-title="Información Básica"><img src="_static/recoleccion_datos/Informacion_basica.png" class="align-center" width="800px" height="500px" alt="Información Básica">
+</a></p>
+</div>
+<div class="section" id="informacion-del-predio">
+<h3>2 - Información del predio<a class="headerlink" href="#informacion-del-predio" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La sección de información del predio es una de las más largas del formulario y contempla el diligenciamiento de información alfanumérica relacionada a datos catastrales, datos registrales y la condición del predio. Dependiendo de cómo se diligencie este formulario, se habilitarán diferentes opciones relacionadas a los campos definidos anteriormente.</p>
+<p><a class="" data-lightbox="Información del predio" href="_static/recoleccion_datos/Info_predio.gif" title="Información del predio" data-title="Información del predio"><img src="_static/recoleccion_datos/Info_predio.gif" class="align-center" width="800px" height="500px" alt="Información del predio">
+</a></p>
+</div>
+<div class="section" id="terreno">
+<h3>3 - Terreno<a class="headerlink" href="#terreno" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La tercera sección corresponde al formulario de terreno, esta tiene un componente geográfico, en donde se adquiere la geometría del terreno asociado al predio y se almacena la información asociada a ese terreno.</p>
+<p><a class="" data-lightbox="Terreno" href="_static/recoleccion_datos/Terreno.gif" title="Terreno" data-title="Terreno"><img src="_static/recoleccion_datos/Terreno.gif" class="align-center" width="800px" height="500px" alt="Terreno">
+</a></p>
+</div>
+<div class="section" id="derechos">
+<h3>4 - Derechos<a class="headerlink" href="#derechos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La cuarta sección corresponde a los derechos, en esta es posible adicionar uno o varios interesados o restricciones asociados al predio.</p>
+<p><a class="" data-lightbox="Derechos" href="_static/recoleccion_datos/Derechos.gif" title="Derechos" data-title="Derechos"><img src="_static/recoleccion_datos/Derechos.gif" class="align-center" width="800px" height="500px" alt="Derechos">
+</a></p>
+<div class="section" id="interesados">
+<h4>Interesados<a class="headerlink" href="#interesados" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Dentro del formulario de interesado, es posible agregar un nuevo interesado con su respectivo formulario o seleccionar uno ya existente dentro de la base de datos, también se agrega información asociada al derecho y una o varias fuentes.</p>
+<div class="section" id="fuentes">
+<h5>Fuentes<a class="headerlink" href="#fuentes" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Las fuentes permiten adicionar un adjunto a partir de la toma de una fotografía y el diligenciamiento de los diferentes atributos al interior del formulario.</p>
+</div>
+</div>
+<div class="section" id="restricciones-del-predio">
+<h4>Restricciones del predio<a class="headerlink" href="#restricciones-del-predio" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>El formulario de restricciones es bastante sencillo, ya que en este se agrega el tipo de servidumbre asociada al predio.</p>
+<p><a class="" data-lightbox="Restricciones" href="_static/recoleccion_datos/Restricciones.gif" title="Restricciones" data-title="Restricciones"><img src="_static/recoleccion_datos/Restricciones.gif" class="align-center" width="800px" height="500px" alt="Restricciones">
+</a></p>
+</div>
+</div>
+<div class="section" id="construcciones">
+<h3>5 - Construcciones<a class="headerlink" href="#construcciones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta sección facilita la creación de una o varias construcciones, el formulario está compuesto por dos pestañas, la primera que es información alfanumérica asociada a la construcción y la segunda permite la creación de una o varias unidades de construcción geográficas.</p>
+<div class="section" id="unidades-de-construccion">
+<h4>Unidades de construcción<a class="headerlink" href="#unidades-de-construccion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>El formulario de las unidades de construcción varía según las características que se seleccionen a lo largo del formulario, en este es posible agregar diferentes tipos de calificaciones de construcción, no convencionales y convencionales, siendo estas últimas las que tienen un formulario aparte para asociarlo a cada unidad de construcción.</p>
+</div>
+</div>
+<div class="section" id="ofertas-de-mercado-inmobiliario">
+<h3>6 - Ofertas de mercado inmobiliario<a class="headerlink" href="#ofertas-de-mercado-inmobiliario" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La sección de ofertas de mercado inmobiliario facilita agregar una o varias ofertas inmobiliarias asociadas al mismo predio, dentro de este formulario se solicitan la información del tipo de oferta, el valor pedido, el valor negociado, la fecha de captura de la oferta, el tiempo de la oferta en meses, el nombre del oferente y el teléfono de contacto del oferente, variables obligatorias para la captura de este formulario.</p>
+<p><a class="" data-lightbox="Ofertas de mercado inmobiliario" href="_static/recoleccion_datos/Ofertas_MI.gif" title="Ofertas de mercado inmobiliario" data-title="Ofertas de mercado inmobiliario"><img src="_static/recoleccion_datos/Ofertas_MI.gif" class="align-center" width="800px" height="500px" alt="Ofertas de mercado inmobiliario">
+</a></p>
+</div>
+<div class="section" id="resultado-de-la-visita">
+<h3>7 - Resultado de la visita<a class="headerlink" href="#resultado-de-la-visita" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En la sección de resultado visita, como su nombre lo indica, se recopila la información relacionada a la persona que atendió la visita y su relación con el predio.</p>
+</div>
+<div class="section" id="observaciones">
+<h3>8 - Observaciones<a class="headerlink" href="#observaciones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta es la última sección de la documentación y tiene por objetivo permitirle al reconocedor agregar las observaciones o novedades obtenidas en campo.</p>
+<p><a class="" data-lightbox="Observaciones" href="_static/recoleccion_datos/Observaciones.png" title="Observaciones" data-title="Observaciones"><img src="_static/recoleccion_datos/Observaciones.png" class="align-center" width="800px" height="500px" alt="Observaciones">
+</a></p>
+</div>
+</div>
+<div class="section" id="edicion-de-capas-geograficas">
+<h2>Edición de capas geográficas<a class="headerlink" href="#edicion-de-capas-geograficas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La edición de capas geográficas se realiza mediante la selección del objeto geográfico en la interfaz o la búsqueda de este a partir de la barra de búsqueda, una vez que seleccionamos el objeto se nos activan dos opciones, una que corresponde a la edición del formulario en la parte alfanumérica y otra que corresponde a la edición de la parte geográfica</p>
+<div class="section" id="edicion-geografica">
+<h3>Edición geográfica<a class="headerlink" href="#edicion-geografica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta opción nos habilita el modo de edición de la geometría, destacando los vértices de esta y habilitando las siguientes opciones:</p>
+<ul class="simple">
+<li><p>Herramienta de vértices:</p></li>
+<li><p>Herramienta de división:</p></li>
+<li><p>Herramienta de remodelado:</p></li>
+<li><p>Herramienta de relleno de anillo:</p></li>
+</ul>
+</div>
+<div class="section" id="edicion-alfanumerica">
+<h3>Edición alfanumérica<a class="headerlink" href="#edicion-alfanumerica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En este tipo de edición se accede a los atributos del formulario y es posible modificarlo, siempre y cuando en la configuración del proyecto, se habilite la opción de edición de cada una de las variables.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="imagenes_raster.html" class="btn btn-neutral float-right" title="Recomendaciones para el uso de imágenes ráster" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="interfaz.html" class="btn btn-neutral float-left" title="Interfaz" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, SwissTierras Colombia.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
