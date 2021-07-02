@@ -1,8 +1,8 @@
 # Recolección de datos
 
-## Flujo de captura para predios nuevos (Formación)
+<!-- ## Flujo de captura para predios nuevos (Formación)
 
-## Flujo de captura para predios existentes (Actualización)
+## Flujo de captura para predios existentes (Actualización) -->
 
 ## Formulario de puntos 
 
@@ -113,10 +113,10 @@ La edición de capas geográficas se realiza mediante la selección del objeto g
 
 Esta opción nos habilita el modo de edición de la geometría, destacando los vértices de esta y habilitando las siguientes opciones: 
 
-* Herramienta de vértices: 
-* Herramienta de división: 
-* Herramienta de remodelado: 
-* Herramienta de relleno de anillo:  
+* Herramienta de vértices: Mediante esta opción se puede(n) editar (desplazar, eliminar y/o adicionar) el (los) vértice(s) de la capa vectorial seleccionada.
+* Herramienta de división: Esta herramienta permite fraccionar la capa vectorial seleccionada (geometría de tipo línea o polígono) en el número de partes deseado de acuerdo del trazado que el usuario defina en el espacio de trabajo.
+* Herramienta de remodelado: Corresponde a la herramienta que permite extender o reducir (en consideración del trazado que defina el usuario) parte de la capa vectorial tipo polígono seleccionada.
+* Herramienta de relleno de anillo: Como su nombre lo indica, haciendo uso de esta herramienta se rellena(n) el(los) espacios que se evidencian como anillos en la capa vectorial seleccionada de geometría tipo polígono.
 
 ### Edición alfanumérica 
 

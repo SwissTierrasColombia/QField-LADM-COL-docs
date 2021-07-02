@@ -50,7 +50,7 @@ Al presionar este botón por al menos tres (3) segundos se despliega un menú qu
   <p>Estos datos están en función de la precisión del dispositivo del cual se extrae la información de posicionamiento.</p>
   </div>
 
-  - Opción para acceder a la "Configuración de posicionamiento". Como su nombre lo dice, permite acceder a la configuración de QField en lo correspondiente con los ajustes de localización <span style="background:blue"><span style="color:white">ver pestaña configuración</span> </span>.
+  - Opción para acceder a la "Configuración de posicionamiento". Como su nombre lo dice, permite acceder a la configuración de QField en lo correspondiente con los ajustes de localización, [Ver pestaña configuración](#configuracion).
   - Opción para "Centrar en la posición actual", como herramienta de navegación permite que el lienzo se centre en la ubicación que provee el dispositivo.
 
 ### 3. Zoom out ![Barra de búsqueda](_static/interfaz/3_zoom_out.png)
@@ -89,8 +89,7 @@ Botón ubicado en la esquina superior izquierda del área de trabajo de la aplic
 
 3. Botón (Modos de trabajo)
 
-   Corresponde al botón con el que el usuario selecciona el modo de trabajo a emplear, estos son: <span style="background:blue"><span style="color:white">Modo digitalización</span> </span> y <span style="background:blue"><span style="color:white">Modo exploración</span> </span>. 
-
+   Corresponde al botón con el que el usuario selecciona el modo de trabajo a emplear, estos son: [Modo visualización](#modo-visualizacion-modo-visualizacion) y [Modo edición](#modo-edicion-modo-edicion)
 4. Tema de mapa
 
    Desplegable que permite elegir entre los mapas base que el usuario haya definido previamente.
@@ -124,4 +123,4 @@ En este modo es posible explorar la información cargada en el área de trabajo,
 
 Esta opción permite que el usuario pueda crear, modificar o eliminar características -alfanuméricas y/o geográficas- de atributos asociados a la información (tablas y/o capas geográficas) cargada al proyecto.
 
-## Opciones de capas geográficas
+<!-- ## Opciones de capas geográficas -->
