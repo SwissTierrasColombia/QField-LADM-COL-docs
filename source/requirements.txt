@@ -41,4 +41,4 @@ sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.4
 tornado==6.1
 tqdm==4.59.0
-urllib3==1.26.4
+urllib3==1.26.5
