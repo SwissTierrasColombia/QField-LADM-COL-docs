@@ -5,6 +5,7 @@ Uso de QField para LADM-COL
    :maxdepth: 2
    :caption: DOCUMENTACIÓN:
 
+   introduccion.md
    configuracion_inicial.md
    interfaz.md
    recoleccion_datos.md
